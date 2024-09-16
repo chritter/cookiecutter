@@ -1,0 +1,26 @@
+{
+    "project_name": "Cookiecutter Website Simple",
+    "project_slug": "test",
+    "author": "Anonymous",
+    "packaging": "pip",
+    "package_name": "my_package",
+    "mode": "streamlit",
+    "email": "my@email",
+    "_copy_without_render": [
+        "*.html",
+        "*not_rendered_dir",
+        "{{cookiecutter.repo_name}}/templates/*.html"
+    ],
+    "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"],
+    "run_as_docker": true,
+    "init_git": true,
+    "__prompts__": {
+        "package_name": "Select your package name. Will be used by poetry intall.",
+        "package_name_stylized": "Stylized package name",
+        "short_description": "Short description",
+        "devops_username": "Azure DevOps username or organization",
+        "full_name": "Author full name",
+        "email": "Author email",
+        "init_git": "Initialize a git repository"
+    }
+  }
