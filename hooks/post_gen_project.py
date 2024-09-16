@@ -5,8 +5,8 @@ import os
 # Conditional File/Directory Removal:
 
 REMOVE_PATHS = [
-    '{% if cookiecutter.packaging != "pip" %}requirements.txt{% endif %}',
-    '{% if cookiecutter.packaging != "poetry" %}poetry.lock{% endif %}',
+    '{% if cookiecutter.mode == "module_a" %}docs/module_b{% endif %}',
+    '{% if cookiecutter.mode == "module_b" %}docs/module_a{% endif %}',
 ]
 
 for path in REMOVE_PATHS:

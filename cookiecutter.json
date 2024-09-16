@@ -4,7 +4,7 @@
     "author": "Anonymous",
     "packaging": "pip",
     "package_name": "my_package",
-    "mode": "streamlit",
+    "mode": ["module_a", "module_b"],
     "email": "my@email",
     "_copy_without_render": [
         "*.html",
